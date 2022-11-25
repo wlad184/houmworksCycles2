@@ -84,6 +84,13 @@ public class Main {
         }
         System.out.println();
 
+        //task #3.2
+        int y = 9;
+        for (int z = 1; z < 10; z++) {
+            System.out.println(y + " * " + z + " = " + (y * z));
+        }
+        System.out.println();
+
 
 
     }
