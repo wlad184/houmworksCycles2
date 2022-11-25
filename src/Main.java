@@ -69,10 +69,27 @@ public class Main {
         System.out.println();
 
         //task #2.4
-        int friday = 5;
-        for (; friday <= 31; friday += 7) {
+        for (int friday = 3; friday <= 31; friday = friday + 7) {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
         }
+        System.out.println();
+
+
+         //task #3.1
+        int year = 2022;
+        for (int f = 0; f <= (year + 100); f = f + 79) {
+            if (f >= year - 200) {
+                System.out.println(f);
+            }
+        }
+        System.out.println();
+
+        //task #3.2
+        int y = 9;
+        for (int z = 1; z < 10; z++) {
+            System.out.println(y + " * " + z + " = " + (y * z));
+        }
+        System.out.println();
 
 
 
