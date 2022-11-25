@@ -48,7 +48,15 @@ public class Main {
         }
         System.out.println();
 
-
+        //task #2.2
+        contribution = 15000;
+        total = 0;
+        for (int m = 1; m <=108; m++) { // 9 лет равняется 108 месяцам
+            total = total + contribution;
+            if (m % 6 == 0) System.out.println("Месяц " + m + "-й, сумма накоплений равна " + (int)total + " рублей");
+            contribution = total * bid;
+        }
+        System.out.println();
 
 
     }
