@@ -15,7 +15,7 @@ public class Main {
         //task #1.2
         int i = 0;
         while (i < 10) {
-             i++;
+            i++;
             System.out.print(i + " ");
         }
         System.out.println();
@@ -41,14 +41,24 @@ public class Main {
         double contribution = 15000;
         double bid = 0.07; //процент ежемесячной ставки 7%
         total = 0;
-       for (int m = 1; total < 14_000_000; m++) {
-         total = total + contribution;
-         if (m % 6 == 0) System.out.println("Месяц " + m + "-й, сумма накоплений равна " + (int)total + " рублей");
-         contribution = total * bid;
+        for (int m = 1; total < 14_000_000; m++) {
+            total = total + contribution;
+            System.out.println("Месяц " + m + "-й, сумма накоплений равна " + (int)total + " рублей");
+            contribution = total * bid;
         }
         System.out.println();
 
         //task #2.2
+        contribution = 15000;
+        total = 0;
+        for (int m = 1; total < 14_000_000; m++) {
+            total = total + contribution;
+            if (m % 6 == 0) System.out.println("Месяц " + m + "-й, сумма накоплений равна " + (int)total + " рублей");
+            contribution = total * bid;
+        }
+        System.out.println();
+
+        //task #2.3
         contribution = 15000;
         total = 0;
         for (int m = 1; m <=108; m++) { // 9 лет равняется 108 месяцам
@@ -57,6 +67,13 @@ public class Main {
             contribution = total * bid;
         }
         System.out.println();
+
+        //task #2.4
+        int friday = 5;
+        for (; friday <= 31; friday += 7) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+        }
+
 
 
     }
